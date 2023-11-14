@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- SECTION HEADER -->
-    <header class="page-header">
+     <header class="page-header">
       <div class="header-container container">
         <nav class="page-navigation">
           <a class="logotype-link" href="./index.html"
@@ -41,9 +41,15 @@
           </ul>
         </nav>
 
+        <button class="mobile-open-btn" type="button">
+          <svg class="mobile-open-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
         <!-- address details -->
 
-        <address class="contacts">
+       <address class="contacts">
           <ul class="contact-list">
             <li class="contact-list-item list">
               <a class="contact-link link list" href="mailto:info@devstudio.com"
@@ -58,17 +64,17 @@
           </ul>
         </address>
       </div>
-    </header>
-    <!-- MAIN CONTENT BEGIN  HERO SECTION  FIRST SECTION-->
-    <main>
+    </header> 
+    <!--MAIN CONTENT BEGIN  HERO SECTION  FIRST SECTION-->
+   <main>
       <section class="hero-section section">
-        <div class="container">
+        <div class="container main-title-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="order-service-btn" type="button">Order Service</button>
         </div>
-      </section>
-      <!-- SECTION ADVANTAGES SECOND SECTION-->
-      <section class="advantages section">
+      </section> 
+    <!-- SECTION ADVANTAGES SECOND SECTION-->
+    <section class="advantages section">
         <div class="container">
           <h2 hidden class="visually-hidden">advantages</h2>
 
@@ -84,9 +90,9 @@
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
-            </li>
+            </li> 
 
-            <li class="advantages-list-items">
+   <li class="advantages-list-items">
               <div class="icon-cover">
                 <svg class="advantages-list-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -97,9 +103,9 @@
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
-            </li>
+            </li> 
 
-            <li class="advantages-list-items">
+  <li class="advantages-list-items">
               <div class="icon-cover">
                 <svg class="advantages-list-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -126,9 +132,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- SECTION OUR TEAM   THIRD SECTION-->
-      <section class="team-section section">
+      </section> 
+    <!-- SECTION OUR TEAM   THIRD SECTION-->
+    <section class="team-section section">
         <div class="container">
           <h2 class="team-section-name">Our Team</h2>
 
@@ -136,6 +142,7 @@
             <li class="member-info">
               <img
                 class="member-info-img"
+                srcset="./images/teamCard1@2x.jpg 2x"
                 src="./images/teamCard1.jpg"
                 alt="team 1 person"
                 width="264"
@@ -184,6 +191,7 @@
             <li class="member-info">
               <img
                 class="member-info-img"
+                srcset="./images/teamCard2@2x.jpg 2x"
                 src="./images/teamCard2.jpg"
                 alt="team 2 person"
                 width="264"
@@ -231,6 +239,7 @@
             <li class="member-info">
               <img
                 class="member-info-img"
+                srcset="./images/teamCard3@2x.jpg 2x"
                 src="./images/teamCard3.jpg"
                 alt="team 3 person"
                 width="264"
@@ -278,6 +287,7 @@
             <li class="member-info">
               <img
                 class="member-info-img"
+                srcset="./images/teamCard4@2x.jpg 2x"
                 src="./images/teamCard4.jpg"
                 alt="team 4 person"
                 width="264"
@@ -323,10 +333,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
 
-      <!-- SECTION OUR PORTFOLIO 4TH SECTION-->
-      <section class="portfolio-section section">
+    <!-- SECTION OUR ADVANTAGES PORTFOLIO 4TH SECTION-->
+   <section class="portfolio-section section">
         <div class="container">
           <h2 class="portfolio-section-named">Our Portfolio</h2>
 
@@ -335,6 +345,18 @@
               <div class="overlay-on-image">
                 <img
                   class="item-img"
+                  srcset="
+                    ./images/bankingApp1-mobile.jpg 288w,
+                    ./images/bankingApp1-tablet.jpg 356w,
+                    ./images/bankingApp1.jpg        720w,
+                    ./images/bankingApp1-mobile@2x.jpg 576w,
+                    ./images/bankingApp1-tablet@2x.jpg 712,
+                    ./images/bankingApp-desctop@.jpg 720w
+                  "
+                  sizes="(min-width:1158px) 720px,
+                  (min-width: 768px) 356px,
+                  (max-width: 767px) 288px
+                  "
                   src="./images/bankingApp1.jpg"
                   alt="Banking Application"
                   width="360"
@@ -357,6 +379,18 @@
               <div class="overlay-on-image">
                 <img
                   class="item-img"
+                  srcset="
+                    ./images/cashlessPayment-mobile.jpg 288w,
+                    ./images/cashlessPayment-tablet.jpg 356w,
+                    ./images/cashlessPayment.jpg        720w,
+                    ./images/cashlessPayment-mobile@2x.jpg 576w,
+                    ./images/cashlessPayment-tablet@2x.jpg 712,
+                    ./images/cashlessPayment-desctop@.jpg 720w
+                  "
+                  sizes="(min-width:1158px) 720px,
+                  (min-width: 768px) 356px,
+                  (max-width: 767px) 288px
+                  "
                   src="./images/cashlessPayment.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -379,6 +413,18 @@
               <div class="overlay-on-image">
                 <img
                   class="item-img"
+                  srcset="
+                    ./images/meditationApp-mobile.jpg 288w,
+                    ./images/meditationApp-tablet.jpg 356w,
+                    ./images/meditationApp.jpg        720w,
+                    ./images/meditationApp-mobile@2x.jpg 576w,
+                    ./images/meditationApp-tablet@2x.jpg 712,
+                    ./images/meditationApp-desctop@.jpg 720w
+                  "
+                  sizes="(min-width:1158px) 720px,
+                  (min-width: 768px) 356px,
+                  (max-width: 767px) 288px
+                  "
                   src="./images/meditationApp.jpg"
                   alt="Meditation Application"
                   width="360"
@@ -401,6 +447,18 @@
               <div class="overlay-on-image">
                 <img
                   class="item-img"
+                  srcset="
+                    ./images/taxiService-mobile.jpg 288w,
+                    ./images/taxiService-tablet.jpg 356w,
+                    ./images/taxiService.jpg        720w,
+                    ./images/taxiService-mobile@2x.jpg 576w,
+                    ./images/taxiService-tablet@2x.jpg 712,
+                    ./images/taxiService-desctop@.jpg 720w
+                  "
+                  sizes="(min-width:1158px) 720px,
+                  (min-width: 768px) 356px,
+                  (max-width: 767px) 288px
+                  "
                   src="./images/taxiService.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -423,6 +481,18 @@
               <div class="overlay-on-image">
                 <img
                   class="item-img"
+                  srcset="
+                    ./images/screenIllustration-mobile.jpg 288w,
+                    ./images/screenIllustration-tablet.jpg 356w,
+                    ./images/screenIllustration.jpg        720w,
+                    ./images/screenIllustration-mobile@2x.jpg 576w,
+                    ./images/screenIllustration-tablet@2x.jpg 712,
+                    ./images/screenIllustration-desctop@.jpg 720w
+                  "
+                  sizes="(min-width:1158px) 720px,
+                  (min-width: 768px) 356px,
+                  (max-width: 767px) 288px
+                  "
                   src="./images/screenIllustration.jpg"
                   alt="Screen Illustration"
                   width="360"
@@ -445,7 +515,19 @@
               <div class="overlay-on-image">
                 <img
                   class="item-img"
-                  src="./images/onlineCources.jpg"
+                  srcset="
+                    ./images/onlineCourses-mobile.jpg 288w,
+                    ./images/onlineCourses-tablet.jpg 356w,
+                    ./images/onlineCourses.jpg        720w,
+                    ./images/onlineCourses-mobile@2x.jpg 576w,
+                    ./images/onlineCourses-tablet@2x.jpg 712,
+                    ./images/onlineCourses-desctop@.jpg 720w
+                  "
+                  sizes="(min-width:1158px) 720px,
+                  (min-width: 768px) 356px,
+                  (max-width: 767px) 288px
+                  "
+                  src="./images/onlineCourses.jpg"
                   alt="Online Cources"
                   width="360"
                   height="300"
@@ -465,9 +547,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> 
     <!-- SECTION FOOTER -->
-    <footer class="footer-content section">
+     <footer class="footer-content section">
       <div class="container all-content">
         <div class="footer-logo-matched-text">
           <a class="logotype-link footer-logo" href="./index.html"
@@ -541,7 +623,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> 
     <!-- backdrop -->
     <div class="backdrop is-open">
       <div class="modal">
@@ -556,9 +638,9 @@
         </button>
         <p class="revew-form-description">
           Leave your contacts and we will call you back
-        </p>
-        <!-- form -->
-        <form class="review-form">
+        </p> 
+    <!-- form -->
+   <form class="review-form">
           <div class="review-form-field-wrapper">
             <label class="review-form-field-label" for="user-name">
               Name
@@ -654,6 +736,82 @@
           <button class="review-form-btn" type="submit">Send</button>
         </form>
       </div>
+    </div> 
+    <!-- MOBILE MENU --> 
+    <div class="mobile-menu">
+      <container class="container mobile-menu-container is-open">
+            <button
+          class="mobile-menu-close-btn"
+          type="button"
+          aria-label="mobile menu close button"
+        >
+          <svg class="mobile-menu-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+       
+
+        <nav class="mob-menu-navigation">
+          <ul class="mob-menu-links-list list link">
+            <li class="mob-menu-links-item"><a class="mob-menu-link link" href="">Studio</a></li>
+            <li class="mob-menu-links-item"><a class="mob-menu-link link" href="">Portfolio</a></li>
+            <li class="mob-menu-links-item"><a class="mob-menu-link link" href="">Contacts</a></li>
+          </ul>
+          </nav>
+       
+        <address class="mob-menu-contacts">
+          <ul class="mob-menu-contact-list">
+           
+            <li class="mob-menu-contact-list-item link list">
+              <a class="mob-menu-tel link list" href="tel:+110001111111"
+                >+11 (000) 111-11-11
+              </a>
+            </li>
+             <li class="mob-menu-contact-list-item link list">
+              <a class="mob-menu-mail link list" href="mailto:info@devstudio.com"
+                >info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </address>
+<div>
+      <ul class="mob-menu-social-list list">
+                  <li class="mob-menu-social-list-items">
+                    <a href="" class="mob-menu-social-list-link">
+                      <svg class="mob-menu-social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-camera"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="mob-menu-social-list-items">
+                    <a href="" class="mob-menu-social-list-link">
+                      <svg class="mob-menu-social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="mob-menu-social-list-items">
+                    <a href="" class="social-list-link">
+                      <svg class="mob-menu-social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="mob-menu-social-list-items">
+                    <a href="" class="mob-menu-social-list-link">
+                      <svg class="mob-menu-social-list-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+          </div>
+      </container> 
     </div>
+  </body>
+</html>
   </body>
 </html>
