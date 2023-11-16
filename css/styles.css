@@ -98,6 +98,8 @@ button {
 .header-container {
   display: flex;
   justify-content: space-between;
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
 }
 
 .menu-list-names {
@@ -132,6 +134,7 @@ button {
   .header-container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
     align-items: center;
     height: 72px;
   }
@@ -145,8 +148,6 @@ button {
   .page-navigation {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
   }
 
   .logotype-link {
@@ -158,8 +159,6 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     color: #4d5ae5;
-    margin-right: 72 px;
-    display: flex;
     margin-right: 120px;
     padding: 25.5px 0;
   }
@@ -180,9 +179,15 @@ button {
     color: #404bbf;
   }
 
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+
   .contact-link {
     color: #434455;
-    font-size: 16px;
+    font-size: 12px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -194,40 +199,15 @@ button {
   .menu-item {
     position: relative;
     color: #2e2f42;
+  }
+  .contacts-link:hover,
+  .contact-link:focus {
+    color: #404bbf;
+  }
 
-    .contacts-link:hover,
-    .contact-link:focus {
-      color: #404bbf;
-    }
-
-    .contact-link {
-      color: #434455;
-      font-size: 16px;
-      font-style: normal;
-      line-height: 1.5;
-      letter-spacing: 0.02em;
-      display: flex;
-      gap: 40px;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .menu-item {
-      position: relative;
-      color: #404bbf;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .studio::after {
-      content: '';
-      display: block;
-      width: 48px;
-      height: 4px;
-      border-radius: 2px;
-      background: #404bbf;
-      position: absolute;
-      top: 100%;
-      bottom: -1px;
-    }
+  .menu-item {
+    position: relative;
+    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -241,6 +221,7 @@ button {
     position: absolute;
     top: 100%;
     bottom: -1px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .menu-item {
@@ -250,14 +231,6 @@ button {
   .contacts {
     display: flex;
   }
-
-  .contact-link {
-    color: #434455;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-  }
 }
 
 /* ============== HEADER DESCTOP STYLES ============== */
@@ -265,6 +238,7 @@ button {
 @media screen and (min-width: 1158px) {
   .header-container {
     display: flex;
+    align-items: baseline;
   }
 
   .contacts {
@@ -275,15 +249,22 @@ button {
     padding-bottom: 24px;
   }
 
-  .contact-list {
+  .contact-link {
     color: #434455;
     font-size: 16px;
     font-style: normal;
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    margin-left: 40px;
+  }
+
+  .span-color {
+    margin-right: 76px;
+  }
+
+  .contact-list {
     display: flex;
-    flex-direction: column;
-    gap: 24px;
+    flex-direction: row;
+    gap: 40px;
   }
 }
 
@@ -295,7 +276,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('./images/hero/bg-mobile.jpg');
+    url('../images/hero/bg-mobile.jpg');
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -319,7 +300,6 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
-  text-transform: capitalize;
 }
 
 .order-service-btn {
@@ -368,12 +348,16 @@ button {
       url('./images/hero/bg.jpg');
     background-size: cover;
     max-width: 1440px;
+
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .main-title {
+    color: #ffffff;
+    text-align: center;
     font-size: 56px;
+    font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
@@ -389,7 +373,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('./images/hero/bg-tablet.jpg');
+      url('../images/hero/bg-tablet.jpg');
   }
 }
 
@@ -399,7 +383,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('./images/hero/bg.jpg');
+      url('../images/hero/bg.jpg');
   }
 }
 
@@ -411,7 +395,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('./images/hero/bg-mobile@2x.jpg');
+      url('../images/hero/bg-mobile@2x.jpg');
   }
 }
 
@@ -510,10 +494,10 @@ button {
   .advantages-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
   }
-
   .advantages-list-items {
-    column-gap: 24px;
     width: calc((100%-72px) / 4);
   }
   .icon-cover {
@@ -526,8 +510,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc((100%-72px) / 4);
-    column-gap: 24px;
     margin-bottom: 8px;
     gap: 24px;
   }
@@ -600,7 +582,6 @@ button {
 }
 
 .social-list-link {
-  gap: 24px;
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
@@ -665,15 +646,11 @@ button {
 
 /* ============== OUR TEAM TABLET STYLES THIRD section ============== */
 @media screen and (min-width: 768px) {
-  .container {
-    width: 736px;
-  }
-
   .team-members {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 64px;
+    gap: 24px;
   }
 }
 
@@ -694,13 +671,6 @@ button {
 
   .name-occupation {
     padding: 32px 0;
-    gap: 24px;
-  }
-
-  .team-members {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
   }
 
   .team-section-name,
@@ -734,11 +704,6 @@ button {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.all-usage-info {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
 .item-img {
   margin: 0%;
 }
@@ -749,14 +714,22 @@ button {
 
 /* ============== OUR ADVANTAGES TABLET STYLES FOURTH section ============== */
 @media screen and (min-width: 768px) {
-  .item-description {
+  .items-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
+    margin-bottom: 72px;
+  }
+
+  .item-description {
+    display: flex;
+    flex-direction: column;
     width: 356px;
-    margin-bottom: 32px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .all-usage-info {
+    margin-top: 32px;
   }
 }
 
@@ -838,23 +811,22 @@ button {
 
 /* ============== FOOTER MOBILE STYLES ============== */
 .footer-content {
-  background: #2e2f42;
-  padding: 97.5px 0;
-}
-
-.footer-logo-matched-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 17.5px;
-  margin-bottom: 72px;
+  background: #2e2f42;
+  padding: 96px 0;
 }
 
 .logotype-link {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
   line-height: 1.17;
-  display: inline-block;
+  justify-content: center;
+  margin-bottom: 17.5px;
+}
+.footer-icons-collection {
+  margin-bottom: 72px;
 }
 
 .style {
@@ -867,6 +839,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 
 .social-media {
@@ -877,13 +850,18 @@ button {
   letter-spacing: 0.02em;
   display: flex;
   justify-content: center;
+  margin-bottom: 16px;
+}
+
+.social-list-item-footer {
+  width: 40px;
+  height: 40px;
 }
 
 .social-list-footer {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   justify-content: center;
-  margin-bottom: 72px;
 }
 
 .social-list-link-footer {
@@ -903,27 +881,12 @@ button {
   background-color: #31d0aa;
 }
 
-.footer-field-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-}
-
 .subscribe-text {
-  display: flex;
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.footer-feedback-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
 }
 
 .footer-field-mail {
@@ -945,12 +908,13 @@ button {
 .footer-btn {
   padding: 8px 24px;
   display: flex;
+  gap: 16px;
   padding: 8px 24px;
   justify-content: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   font-family: inherit;
   cursor: pointer;
-  gap: 16px;
   border-radius: 4px;
   background-color: #4d5ae5;
   border: none;
@@ -961,36 +925,65 @@ button {
   letter-spacing: 0.04em;
   min-width: 165px;
   height: 40px;
-}
-
-.footer-btn-icon {
-  margin-left: 16px;
+  margin-top: 16px;
 }
 
 /* ============== FOOTER TABLET STYLES ============== */
 @media screen and (min-width: 768px) {
-  .footer-content {
-    padding: 96px 164px 96px 108px;
-  }
   .all-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
+    padding-left: 108px;
+  }
+
+  .footer-feedback-form {
+    display: flex;
+    flex-direction: row;
+    gap: 72px 24px;
+    padding-bottom: 96px;
+    align-items: baseline;
+  }
+  .footer-text {
+    width: 264px;
+    height: 72px;
   }
 
   .footer-logo-matched-text {
-    display: flex;
-    flex-direction: column;
-    width: 264px;
-    gap: 17.5px;
     margin-right: 24px;
   }
-
-  .subscribe-text {
-    display: block;
+  .social-media {
+    margin-bottom: 17.5px;
+  }
+  .logotype-link {
+    margin-bottom: 17.5px;
   }
 }
 /* ============== FOOTER DESCTOP STYLES ============== */
+@media screen and (min-width: 1158px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: unset;
+    padding-left: 15px;
+  }
+
+  .footer-icons-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 80px;
+  }
+  .footer-logo-matched-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 264px;
+  }
+}
 
 /* ============== BACKDROP STYLES ============== */
 .backdrop {
@@ -1288,6 +1281,7 @@ button {
     height: 100%;
     z-index: 99999999999999999999999;
     border-color: #fff;
+    background-color: #fff;
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1351,11 +1345,13 @@ button {
     padding-right: 40px;
   }
 
-  .mob-menu-social-list-item {
+  .mob-menu-social-list-items {
     display: flex;
-    gap: 40px;
-    width: 24px;
-    height: 24px;
+
+    width: 40px;
+    height: 40px;
+    justify-content: space-between;
+    margin-bottom: 40px;
   }
 
   .mob-menu-social-list-link {
