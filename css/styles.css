@@ -236,6 +236,9 @@ button {
 /* ============== HEADER DESCTOP STYLES ============== */
 
 @media screen and (min-width: 1158px) {
+  .page-header {
+    padding-bottom: 24px;
+  }
   .header-container {
     display: flex;
     align-items: baseline;
@@ -260,11 +263,14 @@ button {
   .span-color {
     margin-right: 76px;
   }
-
   .contact-list {
     display: flex;
     flex-direction: row;
     gap: 40px;
+  }
+
+  .menu-item {
+    color: #2e2f42;
   }
 }
 
@@ -710,6 +716,10 @@ button {
 
 .overlay {
   display: none;
+}
+
+.usage {
+  margin-top: 32px;
 }
 
 /* ============== OUR ADVANTAGES TABLET STYLES FOURTH section ============== */
@@ -1269,41 +1279,33 @@ button {
     stroke: #2f2f37;
   }
 
-  .mobile-menu-container {
-    position: relative;
-  }
-
   .mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 99999999999999999999999;
+    z-index: 9999999999999999;
     border-color: #fff;
     background-color: #fff;
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .mobile-menu.is-open {
-    transform: translateX(0%);
+  .mobile-menu-all-container {
+    position: relative;
   }
 
-  .mob-menu-contact-list-item {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  .mobile-menu.is-open {
+    transform: translateX(0%);
   }
 
   .mob-menu-links-list {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 148px;
+    margin-bottom: 168px;
     padding-top: 72px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .mob-menu-link {
@@ -1316,8 +1318,8 @@ button {
     padding-left: 16px;
   }
 
-  .mob-menu-contact-list {
-    padding-left: 24px;
+  .mob-menu-contacts {
+    margin-bottom: 48p;
   }
 
   .mob-menu-tel {
@@ -1325,7 +1327,7 @@ button {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: left;
+    color: #4d5ae5;
     font-style: normal;
     margin-bottom: 24px;
   }
@@ -1335,22 +1337,18 @@ button {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    text-align: left;
+    color: #434455;
     font-style: normal;
   }
 
   .mob-menu-social-list {
-    gap: 16px;
     display: flex;
-    padding-right: 40px;
+    justify-content: space-between;
   }
 
   .mob-menu-social-list-items {
-    display: flex;
-
     width: 40px;
     height: 40px;
-    justify-content: space-between;
     margin-bottom: 40px;
   }
 
@@ -1376,7 +1374,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0;
+    top: 30px;
     right: 0;
     opacity: 10%;
     border-radius: 50%;
