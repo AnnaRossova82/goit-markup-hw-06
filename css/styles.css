@@ -1338,6 +1338,7 @@ button {
     letter-spacing: 0.02em;
     color: #434455;
     font-style: normal;
+    margin-bottom: 48px;
   }
 
   .mob-menu-social-list {
@@ -1387,5 +1388,9 @@ button {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu-close-btn-icon {
+    color: #2e2f42;
   }
 }
