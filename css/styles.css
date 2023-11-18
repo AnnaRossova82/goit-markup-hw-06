@@ -130,6 +130,9 @@ button {
   .mobile-open-btn {
     display: none;
   }
+  .menu-container {
+    display: none;
+  }
 
   .header-container {
     flex-direction: row;
@@ -961,12 +964,15 @@ button {
 
   .footer-logo-matched-text {
     margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
-  .social-media {
-    margin-bottom: 17.5px;
-  }
-  .logotype-link {
-    margin-bottom: 17.5px;
+
+  .footer-icons-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 }
 /* ============== FOOTER DESCTOP STYLES ============== */
@@ -981,15 +987,9 @@ button {
   }
 
   .footer-icons-collection {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
     margin-right: 80px;
   }
   .footer-logo-matched-text {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
     width: 264px;
   }
 }
