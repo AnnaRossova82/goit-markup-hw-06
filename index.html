@@ -41,7 +41,9 @@
           </ul>
         </nav>
 
-        <button class="mobile-open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+        <button class="mobile-open-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu" type="button">
           <svg class="mobile-open-btn-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -740,10 +742,10 @@
       </div>
     </div> 
     <!-- MOBILE MENU --> 
-    <div class="mobile-menu is-open">
-      <container class="container mobile-menu-all-container">
+      <div class="menu-container js-menu-container" id="mobile-menu">
+   
             <button
-          class="mobile-menu-close-btn js-close-menu"
+          class="mobile-open-btn js-close-menu"
           type="button"
           aria-label="mobile menu close button"
         >
@@ -811,7 +813,7 @@
                   </li>
                 </ul>
           </div>
-      </container> 
+    
     </div>
      <script
       defer

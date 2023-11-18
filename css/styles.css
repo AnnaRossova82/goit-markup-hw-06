@@ -1278,7 +1278,7 @@ button {
     stroke: #2f2f37;
   }
 
-  .mobile-menu {
+  .menu-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -1292,12 +1292,8 @@ button {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .mobile-menu-all-container {
-    position: relative;
-  }
-
-  .mobile-menu.is-open {
-    transform: translateX(0%);
+  .menu-container.is-open {
+    transform: translateX(0);
   }
 
   .mob-menu-links-list {
@@ -1374,8 +1370,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 24px;
-    right: 8px;
+    top: 0;
+    right: 0;
     opacity: 10%;
     border-radius: 50%;
     background-color: #e7e9fc;
