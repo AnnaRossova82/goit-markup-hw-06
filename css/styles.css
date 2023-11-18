@@ -1283,8 +1283,9 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100% vw;
+    height: 100% vh;
+    padding: 16px;
     z-index: 9999999999999999;
     border-color: #fff;
     background-color: #fff;
@@ -1366,7 +1367,7 @@ button {
 
   .mob-menu-social-list-link:hover,
   .mob-menu-social-list-link:focus {
-    background-color: #31d0aa;
+    background-color: #404bbf;
   }
 
   .mobile-menu-close-btn {
@@ -1380,9 +1381,9 @@ button {
     border-radius: 50%;
     background-color: #e7e9fc;
     border: 1px solid #2e2f42;
+    stroke: #2e2f42;
     padding: 0;
     line-height: 0;
-    stroke: #2e2f42;
     width: 24px;
     height: 24px;
     cursor: pointer;
